@@ -1,0 +1,54 @@
+.sidebar{
+    flex: 2;
+
+    height: calc(100vh - 100px);
+    background-color: var(--white);
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.customerList{
+    height: calc(100vh - 150px);
+    padding-bottom: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: flex;
+    height: 55px;
+    padding: 8px 20px;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.customer.active{
+    background: var(--blue);
+    color: white;
+}
+
+.customer.active svg path{
+    stroke: white;
+}

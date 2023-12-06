@@ -1,0 +1,105 @@
+.main{
+  overflow: hidden;
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.container{
+  height: calc(100vh - 100px);
+  display: flex;
+}
+
+.chatBox{
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.noChat{
+  flex: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noChat h1{
+  font-size: 40px;
+}
+
+.chatHeader{
+  height: 40px;
+  background-color: var(--dark-gray);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chats{
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 0 10%;
+} 
+
+.chatsContainer{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputBox{
+  background-color: var(--dark-gray);
+  flex-shrink: 1;
+  width: 100%;
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+}
+
+.inputBox input{
+  color: white;
+  font-size: 18px;
+  flex: 8;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  background-color: var(--dark-gray);
+}
+
+.inputBox input:focus{
+  outline: none;
+}
+
+.inputBox button{
+  border-radius: 16px;
+  border: 1px solid white;
+  padding: 20px 12px;
+  flex: 1;
+  height: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat{
+  padding: 8px 16px;
+  background-color: var(--white);
+  width: fit-content;
+  height: fit-content;
+  font-size: 16px;
+
+  border-radius: 0  16px 16px 16px;
+}
+
+.chat.other{
+  margin-left: auto;
+  border-radius: 16px 0 16px 16px;
+}

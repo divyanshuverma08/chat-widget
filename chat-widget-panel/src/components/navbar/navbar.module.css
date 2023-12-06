@@ -1,0 +1,41 @@
+.navbar{
+    height: 100px;
+    background: var(--fa--white);
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar h1{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .adminDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .adminDetails h2{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .adminDetails button{
+    z-index: 10;
+    position: relative;
+  
+    font-size: 16px;
+  
+    display: flex;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  
+    border-radius: 8px;
+    border: 1px solid #1C1C1A;
+  }

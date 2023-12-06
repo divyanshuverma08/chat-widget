@@ -1,0 +1,87 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+  }
+  
+.login form{
+      background-color: white;
+      padding: 0px 60px;
+      border-radius: 10px;
+}
+  
+.login h1{
+    font-size: 24px;
+    color: rgb(77, 1, 77);
+    text-align: center;
+}
+  
+.login button{
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      border: none;
+      background-color: rebeccapurple;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.formInput input{
+    font-size: 16px;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+.formInput label{
+    font-size: 20px;
+    color: gray;
+}
+
+.formInput span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+.formInput input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+.formInput input:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+.link{
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
