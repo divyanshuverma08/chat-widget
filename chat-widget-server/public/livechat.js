@@ -1,7 +1,7 @@
 // livechat.js
 
 document.addEventListener("DOMContentLoaded", function () {
-  const socket = io('http://localhost:5000'); //socket connection
+  const socket = io('https://chat-widget-g9pw.onrender.com'); //socket connection
 
   const chatButton = document.createElement('div');
   chatButton.id = 'chat-button';
