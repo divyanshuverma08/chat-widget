@@ -134,7 +134,7 @@ export default function RegisterPage() {
           <label>Re-enter Password</label>
           <input
             type="password"
-            name="password"
+            name="passwordReEnter"
             onChange={onChange}
             value={values.passwordReEnter}
           />
